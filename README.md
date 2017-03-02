@@ -3,7 +3,6 @@ Implementing MongoDB with Spring Boot and Spring security
 
 
 ## MongoDB Setup:
-=================
 1. Download MongoDB from https://www.mongodb.com/download-center
 2. Install MongoDB (follow https://www.tutorialspoint.com/mongodb/)
 3. cd to 'bin' (Server\{version}\bin) path after MongoDB installaion 
@@ -17,7 +16,6 @@ Implementing MongoDB with Spring Boot and Spring security
 
 	
 ## SpringBootMongoDB Application:
-=================================
 1. Specify build tool (Maven Project / Gradle Project) and its version
 2. Go to https://start.spring.io/
 3. Provide project name under 'Artifact' such as 'SpringBootMongoDB'
@@ -30,11 +28,8 @@ Implementing MongoDB with Spring Boot and Spring security
 
 
 ## Add username & password for accessing springbootmongodb:
-===========================================================
 
 ### at mongo:
--------------
-
 1. run (https://docs.mongodb.com/manual/tutorial/enable-authentication/)
 	use springbootmongodb
 	db.createUser(
@@ -49,7 +44,6 @@ Implementing MongoDB with Spring Boot and Spring security
 
 
 ### at application:
--------------------
 1. add following commands at 'application.properties' (https://tests4geeks.com/spring-data-boot-mongodb-example/)
 	spring.data.mongodb.database=springbootmongodb
 	spring.data.mongodb.host=localhost
